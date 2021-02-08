@@ -1,0 +1,37 @@
+### CREATE A SHOPPING
+POST http://localhost:8080/shopping
+Content-Type: application/json
+
+{
+  "shoppingName": "LAPTOP",
+  "shoppingCategory": "MISC",
+  "shoppingAmount": "2000000"
+}
+
+### GET ALL SHOPPING
+GET http://localhost:8080/shopping
+
+### DELETE SHOPPING BY ID
+DELETE http://localhost:8080/shopping/6020f9c92397e01d3c8bfc1e
+
+### UPDATE A SHOPPING
+PUT http://localhost:8080/shopping
+Content-Type: application/json
+
+{
+  "id": "602101dd3cfd4d586147ee08",
+  "shoppingName": "LAPTOP UPDATE 2",
+  "shoppingCategory": "MISC",
+  "shoppingAmount": 2000000
+}
+
+### DELETE A SHOPPING
+DELETE http://localhost:8080/shopping
+Content-Type: application/json
+
+{
+  "id": "602101dd3cfd4d586147ee08",
+  "shoppingName": "LAPTOP UPDATE 2",
+  "shoppingCategory": "MISC",
+  "shoppingAmount": 2000000
+}
